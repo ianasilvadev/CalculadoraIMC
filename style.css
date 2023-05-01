@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&family=Poppins:wght@300&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&family=Poppins:wght@300&display=swap');
+
+* {
+    font-family: 'Poppins';
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #031339;
+}
+
+#container {
+
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+}
+
+
+
+#calculadora {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    color: #f8fafc;
+    background-color: #262626;
+    border-radius: 10px;
+}
+
+#img img {
+    width: 44rem;
+
+ }
+
+#form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#titulo {
+    font-size: 2.25rem;
+    position: relative;
+    
+}
+
+#titulo::after {
+    position: absolute;
+    content: '';
+    background-color:#629184;
+    width: rem;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    border-radius: 3px;
+
+}
+
+.input-box label {
+    font-size: 1.1rem;
+    color: white
+    
+
+}
+
+.input-field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #262626;
+    padding: 0.3rem;
+    border-radius: 8px;
+    margin-top: 3px;
+
+}
+
+#calculate{
+    
+
+        background-image: linear-gradient(to right, #629184, #142e43);
+        width: 100%;
+        border: none;
+        padding: 15px;
+        color: white;
+        font-size: 15px;
+        border-radius: 10px;
+        cursor: pointer;
+        
+        }
+
+#peso, #altura{
+     border-radius: 7px;
+     width: 65%;
+}
+
+
+#resultado {
+    background-color: #262626;
+    border: 1px solid ;
+    border-radius: 8px;
+    padding: 10px;
+    display: none;
+    text-align: center;
+}
+
+#voltar {
+    display: none;
+    margin-top: 1rem;
+    background-color: #142e43;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: all 0.2s ease-in-out;
+}
+
+#voltar:hover {
+    background-color: #0e1d29;
+}
+
+@media screen and (max-width:1000px){
+
+    #img img{
+        width:400px;
+    }
+
+    #container {
+        flex-direction: column;
+    }
+
+
+
+    #calculadora {
+        margin:30px;
+        margin-top:-40px;
+    }
+}
